@@ -404,7 +404,7 @@
 
 ;;; functions
 
-(custom-set-face! "@function" [:bold]
+(custom-set-face! "@function" []
                   {:fg oxocarbon.base12 :bg oxocarbon.none})
 (custom-set-face! "@function.builtin" [] {:fg oxocarbon.base12 :bg oxocarbon.none})
 
