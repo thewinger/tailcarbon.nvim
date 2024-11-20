@@ -181,7 +181,7 @@ vim.api.nvim_set_hl(0, "SpecialChar", {fg = oxocarbon.base04, bg = oxocarbon.non
 vim.api.nvim_set_hl(0, "SpecialComment", {fg = oxocarbon.base08, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Statement", {fg = oxocarbon.base09, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "StorageClass", {fg = oxocarbon.base09, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "String", {fg = oxocarbon.base14, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "String", {fg = oxocarbon.base06, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Structure", {fg = oxocarbon.base09, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Tag", {fg = oxocarbon.base04, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Todo", {fg = oxocarbon.base13, bg = oxocarbon.none})
