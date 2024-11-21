@@ -6,10 +6,10 @@ else
 end
 vim.g["colors_name"] = "oxocarbon"
 vim.o["termguicolors"] = true
-local base00 = "#161616"
-local base06 = "#ffffff"
-local base09 = "#78a9ff"
-local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = blend_hex(base00, base06, 0.085), base02 = blend_hex(base00, base06, 0.32), base03 = blend_hex(base00, base06, 0.42), base04 = blend_hex(base00, base06, 0.82), base05 = blend_hex(base00, base06, 0.95), base06 = base06, base07 = "#08bdba", base08 = "#3ddbd9", base09 = base09, base10 = "#ee5396", base11 = "#33b1ff", base12 = "#ff7eb6", base13 = "#42be65", base14 = "#be95ff", base15 = "#82cfff", blend = "#131313", none = "NONE"}) or {base00 = base06, base01 = blend_hex(base00, base06, 0.95), base02 = blend_hex(base00, base06, 0.82), base03 = base00, base04 = "#37474F", base05 = "#90A4AE", base06 = "#525252", base07 = "#08bdba", base08 = "#ff7eb6", base09 = "#ee5396", base10 = "#FF6F00", base11 = "#0f62fe", base12 = "#673AB7", base13 = "#42be65", base14 = "#be95ff", base15 = "#FFAB91", blend = "#FAFAFA", none = "NONE"})
+local base00 = "#1E293B"
+local base06 = "#F8FAFC"
+local base09 = "#7DD3FC"
+local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = blend_hex(base00, base06, 0.085), base02 = blend_hex(base00, base06, 0.18), base03 = blend_hex(base00, base06, 0.4), base04 = blend_hex(base00, base06, 0.82), base05 = blend_hex(base00, base06, 0.95), base06 = base06, base07 = "#34d399", base08 = "#5eead4", base09 = base09, base10 = "#f9a8d4", base11 = "#38bdf8", base12 = "#f472b6", base13 = "#10b981", base14 = "#a78bfa", base15 = "#7dd3fc", blend = "#1E293B", none = "NONE"}) or {base00 = base06, base01 = blend_hex(base00, base06, 0.95), base02 = blend_hex(base00, base06, 0.82), base03 = base00, base04 = "#334155", base05 = "#94a3b8", base06 = "#475569", base07 = "#14b8a6", base08 = "#f9a8d4", base09 = "#f472b6", base10 = "#F97316", base11 = "#38bdf8", base12 = "#5b21b6", base13 = "#10b981", base14 = "#a78bfa", base15 = "#FCA5A5", blend = "#F8FAFC", none = "NONE"})
 vim.g["terminal_color_0"] = oxocarbon.base01
 vim.g["terminal_color_1"] = oxocarbon.base11
 vim.g["terminal_color_2"] = oxocarbon.base14
@@ -28,12 +28,12 @@ vim.g["terminal_color_14"] = oxocarbon.base07
 vim.g["terminal_color_15"] = oxocarbon.base06
 vim.api.nvim_set_hl(0, "ColorColumn", {fg = oxocarbon.none, bg = oxocarbon.base01})
 vim.api.nvim_set_hl(0, "Cursor", {fg = oxocarbon.base00, bg = oxocarbon.base04})
-vim.api.nvim_set_hl(0, "CursorLine", {fg = oxocarbon.none, bg = oxocarbon.base01})
+vim.api.nvim_set_hl(0, "CursorLine", {fg = oxocarbon.none, bg = oxocarbon.base00})
 vim.api.nvim_set_hl(0, "CursorColumn", {fg = oxocarbon.none, bg = oxocarbon.base01})
 vim.api.nvim_set_hl(0, "CursorLineNr", {fg = oxocarbon.base04, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "QuickFixLine", {fg = oxocarbon.none, bg = oxocarbon.base01})
 vim.api.nvim_set_hl(0, "Error", {fg = oxocarbon.base10, bg = oxocarbon.base01})
-vim.api.nvim_set_hl(0, "LineNr", {fg = oxocarbon.base03, bg = oxocarbon.base00})
+vim.api.nvim_set_hl(0, "LineNr", {fg = oxocarbon.base03, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "NonText", {fg = oxocarbon.base02, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Normal", {fg = oxocarbon.base04, bg = oxocarbon.base00})
 vim.api.nvim_set_hl(0, "Pmenu", {fg = oxocarbon.base04, bg = oxocarbon.base01})
@@ -126,8 +126,8 @@ vim.api.nvim_set_hl(0, "@lsp.typemod.function.readonly", {link = "@method"})
 vim.api.nvim_set_hl(0, "@lsp.typemod.variable.defaultLibrary", {link = "@variable.builtin"})
 vim.api.nvim_set_hl(0, "@lsp.typemod.variable.injected", {link = "@variable"})
 vim.api.nvim_set_hl(0, "Folded", {fg = oxocarbon.base02, bg = oxocarbon.base01})
-vim.api.nvim_set_hl(0, "FoldColumn", {fg = oxocarbon.base01, bg = oxocarbon.base00})
-vim.api.nvim_set_hl(0, "SignColumn", {fg = oxocarbon.base01, bg = oxocarbon.base00})
+vim.api.nvim_set_hl(0, "FoldColumn", {fg = oxocarbon.base01, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "SignColumn", {fg = oxocarbon.base01, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Directory", {fg = oxocarbon.base08, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "EndOfBuffer", {fg = oxocarbon.base01, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "ErrorMsg", {fg = oxocarbon.base10, bg = oxocarbon.none})
@@ -271,7 +271,7 @@ vim.api.nvim_set_hl(0, "FloatBorder", {fg = oxocarbon.blend, bg = oxocarbon.blen
 vim.api.nvim_set_hl(0, "NormalNC", {fg = oxocarbon.base05, bg = oxocarbon.base00})
 vim.api.nvim_set_hl(0, "TermCursor", {fg = oxocarbon.base00, bg = oxocarbon.base04})
 vim.api.nvim_set_hl(0, "TermCursorNC", {fg = oxocarbon.base00, bg = oxocarbon.base04})
-vim.api.nvim_set_hl(0, "StatusLine", {fg = oxocarbon.base04, bg = oxocarbon.base00})
+vim.api.nvim_set_hl(0, "StatusLine", {fg = oxocarbon.base04, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "StatusLineNC", {fg = oxocarbon.base04, bg = oxocarbon.base01})
 vim.api.nvim_set_hl(0, "StatusReplace", {fg = oxocarbon.base00, bg = oxocarbon.base08})
 vim.api.nvim_set_hl(0, "StatusInsert", {fg = oxocarbon.base00, bg = oxocarbon.base12})

@@ -45,83 +45,52 @@
   (vim.cmd.hi :clear))
 
 ;; set defaults
-
 (let! colors_name :oxocarbon)
 (set! termguicolors)
 
-;; oxocarbon palette
-  ; fg = "#F8FAFC",
-  ; bg = "#1E293B",
-  ; dark = "#0F172A",
-  ; white = "#F8FAFC",
-  ; comment = "#64748b",
-  ; gray_light = "#CBD5E1",
-  ; gray = "#94A3B8",
-  ; blue_bg = "#0c4a6e",
-  ; blue = "#7DD3FC",
-  ; green = "#5EEAD4",
-  ; cyan = "#67E8F9",
-  ; light_red = "#FECDD3",
-  ; red = "#fda4af",
-  ; orange = "#FDBA74",
-  ; yellow = "#FDE047",
-  ; purple = "#A78BFA",
-  ; magenta = "#F472B6",
-  ; cursor_fg = "#F8FAFC",
-  ; cursor_bg = "#0F172A",
-  ; sign_add = "#10B981",
-  ; sign_change = "#3B82F6",
-  ; sign_delete = "#EF4444",
-  ; tree_sign_add = "#22C55E",
-  ; tree_sign_change = "#EAB308",
-  ; error_red = "#EF4444",
-  ; warning_orange = "#F97316",
-  ; info_yellow = "#FACC15",
-  ; hint_blue = "#0EA5E9",
-  ; success_green = "#22C55e",
 
-(local base00 "#161616")
-(local base06 "#ffffff")
-(local base09 "#78a9ff")
+(local base00 "#1E293B")
+(local base06 "#F8FAFC")
+(local base09 "#7DD3FC")
 
 (local oxocarbon (or (and (= vim.o.background :dark)
                           {: base00
                            :base01 (blend-hex base00 base06 0.085)
-                           ; :base02 (blend-hex base00 base06 0.18)
-                           :base02 (blend-hex base00 base06 0.32)
-                           ; :base03 (blend-hex base00 base06 0.3)
-                           :base03 (blend-hex base00 base06 0.42)
+                           :base02 (blend-hex base00 base06 0.18)
+                           :base03 (blend-hex base00 base06 0.4)
                            :base04 (blend-hex base00 base06 0.82)
                            :base05 (blend-hex base00 base06 0.95)
                            : base06
-                           :base07 "#08bdba"
-                           :base08 "#3ddbd9"
+                           :base07 "#34d399"
+                           :base08 "#5eead4"
                            : base09
-                           :base10 "#ee5396"
-                           :base11 "#33b1ff"
-                           :base12 "#ff7eb6"
-                           :base13 "#42be65"
-                           :base14 "#be95ff"
-                           :base15 "#82cfff"
-                           :blend "#131313"
+                           ; :base10 "#f472b6"
+                           :base10 "#f9a8d4"
+                           :base11 "#38bdf8"
+                           ; :base12 "#f9a8d4"
+                           :base12 "#f472b6"
+                           :base13 "#10b981"
+                           :base14 "#a78bfa"
+                           :base15 "#7dd3fc"
+                           :blend "#1E293B"
                            :none :NONE})
                      {:base00 base06
                       :base01 (blend-hex base00 base06 0.95)
                       :base02 (blend-hex base00 base06 0.82)
                       :base03 base00
-                      :base04 "#37474F"
-                      :base05 "#90A4AE"
-                      :base06 "#525252"
-                      :base07 "#08bdba"
-                      :base08 "#ff7eb6"
-                      :base09 "#ee5396"
-                      :base10 "#FF6F00"
-                      :base11 "#0f62fe"
-                      :base12 "#673AB7"
-                      :base13 "#42be65"
-                      :base14 "#be95ff"
-                      :base15 "#FFAB91"
-                      :blend "#FAFAFA"
+                      :base04 "#334155"
+                      :base05 "#94a3b8"
+                      :base06 "#475569"
+                      :base07 "#14b8a6"
+                      :base08 "#f9a8d4"
+                      :base09 "#f472b6"
+                      :base10 "#F97316"
+                      :base11 "#38bdf8"
+                      :base12 "#5b21b6"
+                      :base13 "#10b981"
+                      :base14 "#a78bfa"
+                      :base15 "#FCA5A5"
+                      :blend "#F8FAFC"
                       :none :NONE}))
 
 ;; terminal
@@ -147,12 +116,12 @@
 
 (custom-set-face! :ColorColumn [] {:fg oxocarbon.none :bg oxocarbon.base01})
 (custom-set-face! :Cursor [] {:fg oxocarbon.base00 :bg oxocarbon.base04})
-(custom-set-face! :CursorLine [] {:fg oxocarbon.none :bg oxocarbon.base01})
+(custom-set-face! :CursorLine [] {:fg oxocarbon.none :bg oxocarbon.base00})
 (custom-set-face! :CursorColumn [] {:fg oxocarbon.none :bg oxocarbon.base01})
 (custom-set-face! :CursorLineNr [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 (custom-set-face! :QuickFixLine [] {:fg oxocarbon.none :bg oxocarbon.base01})
 (custom-set-face! :Error [] {:fg oxocarbon.base10 :bg oxocarbon.base01})
-(custom-set-face! :LineNr [] {:fg oxocarbon.base03 :bg oxocarbon.base00})
+(custom-set-face! :LineNr [] {:fg oxocarbon.base03 :bg oxocarbon.none})
 (custom-set-face! :NonText [] {:fg oxocarbon.base02 :bg oxocarbon.none})
 (custom-set-face! :Normal [] {:fg oxocarbon.base04 :bg oxocarbon.base00})
 (custom-set-face! :Pmenu [] {:fg oxocarbon.base04 :bg oxocarbon.base01})
@@ -269,8 +238,8 @@
 ;; gutter
 
 (custom-set-face! :Folded [] {:fg oxocarbon.base02 :bg oxocarbon.base01})
-(custom-set-face! :FoldColumn [] {:fg oxocarbon.base01 :bg oxocarbon.base00})
-(custom-set-face! :SignColumn [] {:fg oxocarbon.base01 :bg oxocarbon.base00})
+(custom-set-face! :FoldColumn [] {:fg oxocarbon.base01 :bg oxocarbon.none})
+(custom-set-face! :SignColumn [] {:fg oxocarbon.base01 :bg oxocarbon.none})
 
 ;; navigation
 
@@ -557,7 +526,7 @@
 
 ;; statusline/winbar
 
-(custom-set-face! :StatusLine [] {:fg oxocarbon.base04 :bg oxocarbon.base00})
+(custom-set-face! :StatusLine [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 (custom-set-face! :StatusLineNC [] {:fg oxocarbon.base04 :bg oxocarbon.base01})
 (custom-set-face! :StatusReplace [] {:fg oxocarbon.base00 :bg oxocarbon.base08})
 (custom-set-face! :StatusInsert [] {:fg oxocarbon.base00 :bg oxocarbon.base12})
