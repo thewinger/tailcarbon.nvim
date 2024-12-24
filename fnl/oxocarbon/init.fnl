@@ -93,6 +93,7 @@
                       :blend "#F8FAFC"
                       :none :NONE}))
 
+
 ;; terminal
 
 (let! terminal_color_0 oxocarbon.base01)
@@ -669,5 +670,14 @@
 (custom-set-face! :VimwikiList [] {:link "markdownListMarker"})
 (custom-set-face! :VimwikiLink [] {:link "markdownUrl"})
 (custom-set-face! :VimwikiCode [] {:link "markdownCode"})
+
+;; Modicator
+
+(custom-set-face! :NormalMode [] {:fg oxocarbon.base09})
+(custom-set-face! :InsertMode [] {:fg oxocarbon.base12})
+(custom-set-face! :VisualMode [] {:fg oxocarbon.base14})
+(custom-set-face! :CommandMode [] {:fg oxocarbon.base13})
+(custom-set-face! :ReplaceMode [] {:fg oxocarbon.base10})
+
 
 { : oxocarbon }
