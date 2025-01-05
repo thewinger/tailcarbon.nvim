@@ -8,8 +8,8 @@ vim.g["colors_name"] = "oxocarbon"
 vim.o["termguicolors"] = true
 local base00 = "#1E293B"
 local base06 = "#F8FAFC"
-local base09 = "#7DD3FC"
-local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = blend_hex(base00, base06, 0.085), base02 = blend_hex(base00, base06, 0.18), base03 = blend_hex(base00, base06, 0.4), base04 = blend_hex(base00, base06, 0.82), base05 = blend_hex(base00, base06, 0.95), base06 = base06, base07 = "#34d399", base08 = "#5eead4", base09 = base09, base10 = "#f9a8d4", base11 = "#38bdf8", base12 = "#f472b6", base13 = "#10b981", base14 = "#a78bfa", base15 = "#7dd3fc", blend = "#1E293B", none = "NONE"}) or {base00 = base06, base01 = blend_hex(base00, base06, 0.95), base02 = blend_hex(base00, base06, 0.82), base03 = base00, base04 = "#334155", base05 = "#94a3b8", base06 = "#475569", base07 = "#14b8a6", base08 = "#f9a8d4", base09 = "#f472b6", base10 = "#F97316", base11 = "#38bdf8", base12 = "#5b21b6", base13 = "#10b981", base14 = "#a78bfa", base15 = "#FCA5A5", blend = "#F8FAFC", none = "NONE"})
+local base09 = "#6bdfff"
+local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = blend_hex(base00, base06, 0.085), base02 = blend_hex(base00, base06, 0.18), base03 = blend_hex(base00, base06, 0.4), base04 = blend_hex(base00, base06, 0.82), base05 = blend_hex(base00, base06, 0.95), base06 = base06, base07 = "#83c9bc", base08 = "#b1faeb", base09 = base09, base10 = "#ff85b8", base11 = "#38bdf8", base12 = "#ff85b8", base13 = "#83c9bc", base14 = "#cda1ff", base15 = "#6bdfff", blend = "#1E293B", none = "NONE"}) or {base00 = base06, base01 = blend_hex(base00, base06, 0.95), base02 = blend_hex(base00, base06, 0.82), base03 = base00, base04 = "#334155", base05 = "#94a3b8", base06 = "#475569", base07 = "#14b8a6", base08 = "#f9a8d4", base09 = "#f472b6", base10 = "#F97316", base11 = "#38bdf8", base12 = "#5b21b6", base13 = "#10b981", base14 = "#a78bfa", base15 = "#FCA5A5", blend = "#F8FAFC", none = "NONE"})
 vim.g["terminal_color_0"] = oxocarbon.base01
 vim.g["terminal_color_1"] = oxocarbon.base11
 vim.g["terminal_color_2"] = oxocarbon.base14
