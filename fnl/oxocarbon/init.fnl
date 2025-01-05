@@ -47,27 +47,11 @@
 ;; set defaults
 (let! colors_name :oxocarbon)
 (set! termguicolors)
-;; base00 = "#43454b",
-;; base01 = "#ff8a7a",
-;; base02 = "#83c9bc",
-;; base03 = "#d9c668",
-;; base04 = "#4ec4e6",
-;; base05 = "#ff85b8",
-;; base06 = "#cda1ff",
-;; base07 = "#ffffff",
-;; base08 = "#838991",
-;; base09 = "#ff8a7a",
-;; base0A = "#b1faeb",
-;; base0B = "#ffa14f",
-;; base0C = "#6bdfff",
-;; base0D = "#ff85b8",
-;; base0E = "#e5cfff",
-;; base0F = "#ffffff",
 
 
 (local base00 "#1E293B")
 (local base06 "#F8FAFC")
-(local base09 "#6bdfff")
+(local base09 "#7DD3FC")
 
 (local oxocarbon (or (and (= vim.o.background :dark)
                           {: base00
@@ -77,17 +61,17 @@
                            :base04 (blend-hex base00 base06 0.82)
                            :base05 (blend-hex base00 base06 0.95)
                            : base06
-                           :base07 "#83c9bc"
-                           :base08 "#b1faeb"
+                           :base07 "#34d399"
+                           :base08 "#5eead4"
                            : base09
                            ; :base10 "#f472b6"
-                           :base10 "#ff85b8"
+                           :base10 "#f9a8d4"
                            :base11 "#38bdf8"
                            ; :base12 "#f9a8d4"
-                           :base12 "#ff85b8"
-                           :base13 "#83c9bc"
-                           :base14 "#cda1ff"
-                           :base15 "#6bdfff"
+                           :base12 "#f472b6"
+                           :base13 "#10b981"
+                           :base14 "#a78bfa"
+                           :base15 "#7dd3fc"
                            :blend "#1E293B"
                            :none :NONE})
                      {:base00 base06
@@ -108,6 +92,7 @@
                       :base15 "#FCA5A5"
                       :blend "#F8FAFC"
                       :none :NONE}))
+
 
 ;; terminal
 
@@ -685,5 +670,14 @@
 (custom-set-face! :VimwikiList [] {:link "markdownListMarker"})
 (custom-set-face! :VimwikiLink [] {:link "markdownUrl"})
 (custom-set-face! :VimwikiCode [] {:link "markdownCode"})
+
+;; Modicator
+
+(custom-set-face! :NormalMode [] {:fg oxocarbon.base09})
+(custom-set-face! :InsertMode [] {:fg oxocarbon.base12})
+(custom-set-face! :VisualMode [] {:fg oxocarbon.base14})
+(custom-set-face! :CommandMode [] {:fg oxocarbon.base13})
+(custom-set-face! :ReplaceMode [] {:fg oxocarbon.base10})
+
 
 { : oxocarbon }
