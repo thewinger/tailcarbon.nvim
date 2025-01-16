@@ -378,4 +378,5 @@ vim.api.nvim_set_hl(0, "InsertMode", {fg = oxocarbon.base12})
 vim.api.nvim_set_hl(0, "VisualMode", {fg = oxocarbon.base14})
 vim.api.nvim_set_hl(0, "CommandMode", {fg = oxocarbon.base13})
 vim.api.nvim_set_hl(0, "ReplaceMode", {fg = oxocarbon.base10})
+vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", {fg = oxocarbon.base09})
 return {oxocarbon = oxocarbon}
