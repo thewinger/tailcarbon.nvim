@@ -679,31 +679,12 @@
 (custom-set-face! :CommandMode [] {:fg oxocarbon.base13})
 (custom-set-face! :ReplaceMode [] {:fg oxocarbon.base10})
 
-(custom-set-face! :MiniStatuslineModeNormal [] {:fg oxocarbon.base09})
+(custom-set-face! :MiniStatuslineModeNormal [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base09})
+(custom-set-face! :MiniStatuslineModeInsert [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base12})
+(custom-set-face! :MiniStatuslineModeVisual [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base14})
+(custom-set-face! :MiniStatuslineModeCommand [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base13})
+(custom-set-face! :MiniStatuslineModeReplace [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base10})
 
-; * `MiniStatuslineModeNormal` - Normal mode.
-; * `MiniStatuslineModeInsert` - Insert mode.
-; * `MiniStatuslineModeVisual` - Visual mode.
-; * `MiniStatuslineModeReplace` - Replace mode.
-; * `MiniStatuslineModeCommand` - Command mode.
-; * `MiniStatuslineModeOther` - other modes (like Terminal, etc.).
-; {:replace {:a {:fg (. colors :color0) :bg (. colors :color1) :bold true}
-;            :b {:fg (. colors :color2) :bg (. colors :color3)}}
-;  :inactive {:a {:fg (. colors :color0) :bg (. colors :color7) :bold true}
-;             :b {:fg (. colors :color6) :bg (. colors :color3)}
-;             :z {:fg (. colors :color0) :bg (. colors :color3)}}
-;  :normal {:a {:fg (. colors :color0) :bg (. colors :color7) :bold true}
-;           :b {:fg (. colors :color6) :bg (. colors :color3)}
-;           :c {:fg (. colors :color6) :bg (. colors :color3)}
-;           :z {:fg (. colors :color6) :bg (. colors :color3)}}
-;  :visual {:a {:fg (. colors :color0) :bg (. colors :color8) :bold true}
-;           :b {:fg (. colors :color6) :bg (. colors :color3)}
-;           :y {:fg (. colors :color6) :bg (. colors :color3)}
-;           :z {:fg (. colors :color9) :bg (. colors :color3)}}
-;  :insert {:a {:fg (. colors :color0) :bg (. colors :color9) :bold true}
-;           :b {:fg (. colors :color6) :bg (. colors :color3)}
-;           :z {:fg (. colors :color9) :bg (. colors :color3)}}
-;  :command {:a {:fg (. colors :color0) :bg (. colors :color10) :bold true}}}
 
 
 { : oxocarbon }
