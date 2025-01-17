@@ -679,11 +679,13 @@
 (custom-set-face! :CommandMode [] {:fg oxocarbon.base13})
 (custom-set-face! :ReplaceMode [] {:fg oxocarbon.base10})
 
+;; MiniStatusline
+
 (custom-set-face! :MiniStatuslineModeNormal [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base09})
 (custom-set-face! :MiniStatuslineModeInsert [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base12})
 (custom-set-face! :MiniStatuslineModeVisual [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base14})
 (custom-set-face! :MiniStatuslineModeCommand [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base13})
-(custom-set-face! :MiniStatuslineModeReplace [:bold] {:fg oxocarbon.base06 :bg oxocarbon.base10})
+(custom-set-face! :MiniStatuslineModeReplace [] {:fg oxocarbon.base06 :bg oxocarbon.base10})
 
 
 

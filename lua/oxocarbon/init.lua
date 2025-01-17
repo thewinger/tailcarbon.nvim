@@ -382,5 +382,5 @@ vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", {fg = oxocarbon.base06, bg = 
 vim.api.nvim_set_hl(0, "MiniStatuslineModeInsert", {fg = oxocarbon.base06, bg = oxocarbon.base12, bold = true})
 vim.api.nvim_set_hl(0, "MiniStatuslineModeVisual", {fg = oxocarbon.base06, bg = oxocarbon.base14, bold = true})
 vim.api.nvim_set_hl(0, "MiniStatuslineModeCommand", {fg = oxocarbon.base06, bg = oxocarbon.base13, bold = true})
-vim.api.nvim_set_hl(0, "MiniStatuslineModeReplace", {fg = oxocarbon.base06, bg = oxocarbon.base10, bold = true})
+vim.api.nvim_set_hl(0, "MiniStatuslineModeReplace", {fg = oxocarbon.base06, bg = oxocarbon.base10})
 return {oxocarbon = oxocarbon}
