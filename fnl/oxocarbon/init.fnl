@@ -411,7 +411,7 @@
 ;; @function.call
 
 (custom-set-face! "@function.macro" [] {:fg oxocarbon.base07 :bg oxocarbon.none})
-(custom-set-face! "@method" [] {:fg oxocarbon.base07 :bg oxocarbon.none})
+(custom-set-face! "@method" [] {:fg oxocarbon.base08 :bg oxocarbon.none})
 
 ;; @method.call
 
