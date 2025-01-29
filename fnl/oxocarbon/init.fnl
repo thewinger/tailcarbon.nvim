@@ -213,7 +213,7 @@
 (custom-set-face! "@lsp.type.typeAlias" [] {:link "@type.definition"})
 (custom-set-face! "@lsp.type.unresolvedReference" [] {:link "Error"})
 (custom-set-face! "@lsp.type.variable" [] {:link "@variable"} )
-(custom-set-face! "@lsp.mod.readonly" [] {:link "@constant"})
+(custom-set-face! "@lsp.mod.readonly" [] {:link "@lsp"})
 (custom-set-face! "@lsp.mod.typeHint" [] {:link "Type"})
 (custom-set-face! "@lsp.mod.builtin" [] {:link "Special"})
 (custom-set-face! "@lsp.typemod.class.defaultLibrary" [] {:link "@type.builtin"})
